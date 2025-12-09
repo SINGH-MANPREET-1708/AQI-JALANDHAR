@@ -6,8 +6,7 @@ The project includes data preprocessing, AQI computation (CPCB standard), hyperp
 
 ## Project Structure
 
-AQI-JALANDHAR/
-│
+AQI-JALANDHAR
 
 ├── preprocess.py   
 
@@ -61,6 +60,12 @@ cd AQI-JALANDHAR
 ## Install dependencies:
 
 pip install -r requirements.txt
+
+## Dataset
+
+The dataset used in this project is **not included** in this repository (due to licensing and size constraints).  
+You can download it from [CPCB – AQI Repository](https://airquality.cpcb.gov.in/ccr/#/caaqm-dashboard-all/caaqm-landing/aqi-repository).
+
 
 ## Data Preprocessing
 
