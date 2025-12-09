@@ -9,29 +9,21 @@ The project includes data preprocessing, AQI computation (CPCB standard), hyperp
 AQI-JALANDHAR/
 │
 
-├── preprocess.py   # Timestamp fixing, interpolation, data cleaning
+├── preprocess.py   
 
-├── compute_aqi.py   # AQI calculation (CPCB sub-indices + final AQI)
+├── compute_aqi.py  
 
-│
+├── lstm_hyperparameter_tuning.py 
 
-├── lstm_hyperparameter_tuning.py   # Optuna tuning for LSTM model
+├── lstm_training.py  
 
-├── lstm_training.py   # Final LSTM training using tuned parameters
+├── bilstm_hyperparameter_tuning.py  
 
-│
+├── bilstm_training.py 
 
-├── bilstm_hyperparameter_tuning.py   # Optuna tuning for BiLSTM model
+├── federated_approach.py   
 
-├── bilstm_training.py   # Final BiLSTM training using tuned parameters
-
-│
-
-├── federated_approach.py   # Simulated Federated Averaging for AQI prediction
-
-│
-
-└── requirements.txt   # Dependencies
+└── requirements.txt   
 
 
 ##  Features
