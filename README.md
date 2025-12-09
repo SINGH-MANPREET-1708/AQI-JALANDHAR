@@ -51,6 +51,7 @@ AQI-JALANDHAR/
 Clone the repository:
 
 git clone https://github.com/SINGH-MANPREET-1708/AQI-JALANDHAR.git
+
 cd AQI-JALANDHAR
 
 ## Install dependencies:
@@ -58,38 +59,55 @@ cd AQI-JALANDHAR
 pip install -r requirements.txt
 
 ## Data Preprocessing
+
 Step 1: Clean timestamps + fill missing hours
+
 python preprocess.py
 
 Outputs:
+
 jld_aqi_filled.csv
 
 Step 2: Compute AQI using CPCB breakpoints
+
 python compute_aqi.py
 
 Outputs:
+
 jld_aqi_with_aqi.csv
 
 ## LSTM Model
+
 Hyperparameter tuning
+
 python lstm_hyperparameter_tuning.py
+
 Training
+
 python lstm_training.py
 
 ## BiLSTM + Attention Model
+
 Hyperparameter tuning
+
 python bilstm_hyperparameter_tuning.py
+
 Training
+
 python bilstm_training.py
 
-## ederated Learning (FedAvg)
+## Federated Learning (FedAvg)
+
 Run simulated FL with 3 clients:
+
 python federated_approach.py
 
 Performs:
 
 Local client training
+
 Weighted model averaging
+
 Global model evaluation
 
 ## Requirements
